@@ -1,5 +1,11 @@
 @import url("https://fonts.googleapis.com/css?family=Barlow:300,400,500,600,700,800|Teko:300,400,500,600,700&display=swap");
 
+
+html {
+    scroll-behavior: smooth; /* Habilita rolagem suave */
+}
+
+
 :target::before {
     content: "";
     display: block;
@@ -21,6 +27,7 @@
     /*background: linear-gradient(to top, rgba(255, 0, 0, 0.7), transparent);*/
     z-index: 1;
 }
+
 /* 
 .single-pricing {
     padding: 30px;
@@ -538,7 +545,7 @@ hr {
         margin-bottom: 30px
     }
 
-  
+
 }
 
 @media (min-width: 768px) and (max-width: 991px) {
@@ -7117,7 +7124,8 @@ del {
     transition: transform 0.3s ease;
     font-family: "Montserrat", sans-serif;
     font-weight: 600;
-    text-align: center; /* Centraliza o texto */
+    text-align: center;
+    /* Centraliza o texto */
 }
 
 
@@ -7182,7 +7190,7 @@ del {
 
 /* Ajustar botão de cotação */
 .header-right-btn .btn {
-    padding: 10px 16px;
+    padding: 14px 16px;
     /* Ajuste conforme necessário */
     font-size: 17px;
     /* Ajuste conforme necessário */
@@ -7380,9 +7388,176 @@ del {
 } */
 
 
-@media screen and (max-width: 767px) {
+/* Mobile */
+@media screen and (max-width: 480px) {
     .btnDespacho {
         width: 100%;
         font-size: 0.9rem !important;
+    }
+
+    .hero__caption {
+        width: 100% !important;
+    }
+
+    .slider-height {
+        background-position: center center !important;
+    }
+
+    h2 {
+        font-size: 1.6rem !important;
+    }
+
+
+
+    h4 {
+        font-size: 1.4rem;
+    }
+
+    .team-area .section-tittle {
+        margin: 1rem 0rem !important;
+    }
+
+
+
+    .boxTitle {
+        margin-top: 7rem !important;
+    }
+
+    .servicesTitle {
+        margin-bottom: 2rem !important;
+    }
+
+    .single-pricing {
+        width: 100% !important;
+    }
+
+    .owl-carousel .item {
+        width: 100%;
+        /* Cada item pega 100% da largura disponível */
+        box-sizing: border-box;
+    }
+
+    .owl-carousel .item {
+        margin: 0 auto !important;
+        /* Sem margem extra no mobile */
+
+    }
+
+    .help-area .row {
+        margin: 0 auto !important;
+    }
+
+    .processo-de-compra h2 {
+        font-size: 2rem !important;
+    }
+
+    .processo-de-compra {
+        margin-top: 0rem;
+    }
+
+    .bgTestimonial {
+        margin-bottom: 0rem !important;
+    }
+
+    #contato .d-none {
+        display: block !important;
+    }
+
+    .section-tittle .titleCotacao {
+        text-align: center !important;
+    }
+
+    .section-tittle .yellow {
+        font-size: 1.7rem !important;
+    }
+
+    .faq-title {
+        font-size: 1.2rem !important;
+    }
+
+    .section-tittle h2 {
+        font-size: 1.3rem !important;
+    }
+
+    .section-tittle .titleEquipe,
+    .titleParceiros {
+        font-size: 1.8rem !important;
+    }
+
+    #despacho-aduaneiro h4 {
+        font-size: 1.8rem !important;
+    }
+
+    #despacho-aduaneiro h2 {
+        font-size: 1.3rem !important;
+    }
+
+
+    .btnDespacho {
+        font-size: 0.8rem !important;
+        padding: 1.4rem 0.8rem;
+    }
+
+    #despacho-aduaneiro .logoParceiro {
+        max-width: 180px !important;
+    }
+
+    .carousel-control-next,
+    .carousel-control-prev {
+        display: none;
+    }
+
+    .footer-social {
+        display: none;
+    }
+}
+
+/*  Tablets */
+@media screen and (min-width: 481px) and (max-width: 768px) {
+.btnDespacho {
+    font-size: 1rem;
+    margin: 0 auto !important;
+}
+
+.row {
+    justify-content: center ;
+}
+
+ .col-sm-6 {
+    max-width: 100% !important;
+}
+
+.categories-area .single-cat {
+    width: 400px  !important;
+    margin: 0 auto;
+}
+
+#contato .d-none {
+    display: block !important;
+}
+
+#despacho-aduaneiro h4, .titleParceiros {
+    font-size: 2rem !important;
+}
+
+#despacho-aduaneiro h2 {
+    font-size: 1.6rem !important;
+}
+}
+
+@media screen and (min-width: 769px) and (max-width: 1000px) {
+    .row {
+        justify-content: center;
+    }
+
+    .col-md-6 {
+        max-width: 100% !important;
+    }
+    .titleCotacao {
+        text-align: center;
+    }
+
+    .col-md-8 {
+        max-width: 70%;
     }
 }
