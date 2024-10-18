@@ -7390,6 +7390,9 @@ del {
 
 /* Mobile */
 @media screen and (max-width: 480px) {
+    .single-slider::before {
+        background: linear-gradient(to bottom, rgb(0 0 0 / 34%), rgb(0 0 0 / 52%));
+    }
     .btnDespacho {
         width: 100%;
         font-size: 0.9rem !important;
